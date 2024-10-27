@@ -9,8 +9,9 @@ do
 
         docker unpause $containers
         echo "Включил в работу контейнеры с $start по $end"
-        sleep 10
         echo "Жду 1 час..."
+        sleep 3600
+
 
         docker pause $containers
         echo "Поставил на паузу контейнеры с $start по $end"
